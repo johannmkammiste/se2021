@@ -1,3 +1,22 @@
+
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2px;
+    background-color: turquoise;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{ 
+    font-size: 3em;
+    color: springgreen;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .Spotify {
     max-width: 3em;
     max-height: 3em;
@@ -12,6 +31,13 @@ li {
 a {
     text-decoration: none;
     color: rgb(18, 16, 165);
+    transition: ease-in-out 1s;
+}
+
+a:hover {
+    font-size: 2rem;
+    color: ivory;
+
 }
 
 th {
@@ -27,18 +53,13 @@ table, td {
     font-size: 1rem;
 }
 
-body {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    background-color: turquoise;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.teinelk {
+    font-size: 2rem;
+    color: yellow;
 }
 
-h1{ 
-    font-size: 3em;
-    color: springgreen;
-    font-weight: bold;
-    text-decoration: underline;
+@media screen and (max_width: 1085px) {
+    body {
+        display: block;
+    }
 }
